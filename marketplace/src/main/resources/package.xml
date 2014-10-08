@@ -1,0 +1,27 @@
+<package type="addon" name="nuxeo-imap-connector" version="@VERSION@">
+  <title>Nuxeo IMAP Connector</title>
+  <description>
+    <p>IMAP Connector allows to fetch emails from an IMAP mailbox and create
+      documents from then in Nuxeo repository. The creation logic is pluggable.
+      A sample use cases comes with the addon: email folders. Email folders are
+      folders that are filled automatically with the content of a mailbox for
+      which the user configured the credentials.</p>
+  </description>
+  <home-page>http://doc.nuxeo.com/x/SIEk</home-page>
+  <vendor>Nuxeo</vendor>
+  <installer restart="true" />
+  <uninstaller restart="true" />
+  <!-- <hotreload-support>false</hotreload-support> -->
+  <require-terms-and-conditions-acceptance>true
+  </require-terms-and-conditions-acceptance>
+  <nuxeo-validation>nuxeo_certified</nuxeo-validation>
+  <production-state>production_ready</production-state>
+  <supported>true</supported>
+  <platforms>
+    <platform>cap-@DISTRIB_VERSION@</platform>
+    <platform>cap-@DISTRIB_VERSION@-HF*</platform>
+  </platforms>
+  <license>LGPL 2.1</license>
+  <license-url>http://www.gnu.org/licenses/lgpl-2.1.html</license-url>
+  <visibility>PUBLIC</visibility>
+</package>
