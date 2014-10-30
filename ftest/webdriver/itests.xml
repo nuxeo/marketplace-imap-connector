@@ -1,4 +1,4 @@
-<project name="nuxeo-sample-tests"
+<project name="imap-connector-webdriver-tests"
          xmlns:nx="urn:nuxeo-build"
          xmlns:artifact="urn:nuxeo-artifact">
   <taskdef resource="org/nuxeo/build/antlib.xml" uri="urn:nuxeo-build" />
@@ -19,7 +19,7 @@
   <target name="prepare-environment"
           depends="_init,prepare-db,prepare-tomcat,prepare-jboss">
     <copy todir="${out.dir}">
-      <artifact:resolveFile key="org.nuxeo.marketplace.virtualnavigation:marketplace::zip" />
+      <artifact:resolveFile key="org.nuxeo.marketplace.imapconnector:marketplace::zip" />
     </copy>
   </target>
 
