@@ -1,11 +1,7 @@
 <package type="addon" name="nuxeo-imap-connector" version="@VERSION@">
   <title>Nuxeo IMAP Connector</title>
   <description>
-    <p>IMAP Connector allows to fetch emails from an IMAP mailbox and create
-      documents from then in Nuxeo repository. The creation logic is pluggable.
-      A sample use cases comes with the addon: email folders. Email folders are
-      folders that are filled automatically with the content of a mailbox for
-      which the user configured the credentials.</p>
+    The Nuxeo IMAP Connector addon allows to fetch emails from an IMAP mailbox and import them as Documents in the Nuxeo Repository. 
   </description>
   <home-page>http://doc.nuxeo.com/x/SIEk</home-page>
   <vendor>Nuxeo</vendor>
