@@ -82,14 +82,6 @@
       </fileset>
     </move>
 
-    <!-- Separate Web UI packages -->
-    <mkdir dir="${outdir}/marketplace/install/bundles-web-ui" />
-    <move todir="${outdir}/marketplace/install/bundles-web-ui">
-      <fileset dir="${outdir}/marketplace/install/bundles">
-        <include name="nuxeo-platform-mail-web-ui-*.jar" />
-      </fileset>
-    </move>
-
     <!-- Generate install.xml content -->
     <var name="install.bundles" value="" />
     <var name="install.bundles"
@@ -98,9 +90,6 @@
     <var name="install.bundles"
          value="${install.bundles}${line.separator}
   &lt;update file=&quot;${package.root}/install/bundles-jsf-ui&quot; todir=&quot;${env.bundles}&quot; if=&quot;Packages.contains('nuxeo-jsf-ui')&quot; /&gt;"/>
-    <var name="install.bundles"
-         value="${install.bundles}${line.separator}
-  &lt;update file=&quot;${package.root}/install/bundles-web-ui&quot; todir=&quot;${env.bundles}&quot; if=&quot;Packages.contains('nuxeo-web-ui')&quot; /&gt;"/>
 
     <var name="install.libs" value="" />
     <if>
